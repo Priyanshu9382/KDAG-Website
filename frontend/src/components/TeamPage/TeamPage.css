@@ -167,7 +167,6 @@
   font-style: italic;
   color: white;
   transition: all 0.2s;
-  cursor: none !important;
 }
 
 .floating-action-button:hover {

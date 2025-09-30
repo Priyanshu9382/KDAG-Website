@@ -133,11 +133,6 @@ const Navbar = ({ noborder }) => {
               </NavLink>
             </div>
 
-            <div className="kdag-nav-item">
-              <NavLink activeStyle={active_style} to="/forum">
-                <img src={forum_img} alt="" />
-              </NavLink>
-            </div>
             {!isLoggedIn && (
               <div className="kdag-nav-item">
                 <NavLink activeStyle={active_style} to="/auth">
@@ -254,15 +249,6 @@ const Navbar = ({ noborder }) => {
                         onClick={() => setIsMenuOpen(!isMenuOpen)}
                       >
                         Alumni
-                      </NavLink>
-                    </li>
-                    <li>
-                      <NavLink
-                        to="/forum"
-                        onClick={() => setIsMenuOpen(!isMenuOpen)}
-                      >
-                        {" "}
-                        <img src={forum_img} alt="" />
                       </NavLink>
                     </li>
                     {!isLoggedIn && (
